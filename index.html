@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="FastPOS - Giải pháp POS tinh gọn, vận hành hiệu quả.">
+    <title>FastPOS - Vận Hành Tinh Gọn, Tăng Trưởng Vượt Trội | FastYear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Màu từ thiết kế mẫu (Cam, Tím, Xanh lá, Đen)
+              'accent-orange': '#ff6b35', // Cam đậm
+              'accent-purple': '#9333ea', // Tím
+              'accent-green': '#a3e635', // Xanh lá mạ
+              'accent-blue': '#3b82f6',  // Xanh dương
+              'accent-dark': '#18181b',  // Đen (Zinc 900)
+              'bg-surface': '#f3f4f6',   // Xám nhạt nền
+              'text-main': '#18181b',
+              'text-muted': '#52525b',
+              'brand-yellow': '#fac02e', // Màu vàng chủ đạo mới
+            },
+            fontFamily: {
+              sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            },
+            borderRadius: {
+              '4xl': '2rem', // Bo góc lớn như ảnh mẫu
+            },
+            backgroundImage: {
+              'subtle-pattern': "radial-gradient(#e5e7eb 1px, transparent 1px)",
+            },
+            backgroundSize: {
+              'subtle-pattern': '20px 20px',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #a1a1aa; }
+      
+      /* Utility để ẩn scrollbar nhưng vẫn cuộn được */
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-white text-text-main">
+    <div id="root"></div>
+  </body>
+</html>
